@@ -4,6 +4,6 @@
 
 #### Features
 
-> Escrow Account, Realtime Communication, Solana Wallets etc
+> ##### Escrow Account, Realtime Communication, Solana Wallets etc
 
 #### status: work in progress

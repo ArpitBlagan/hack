@@ -15,9 +15,9 @@ const Features = () => {
               whileInView={{ opacity: 1, y: 0, animation: "ease-in-out" }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="font-mono text-[30px] text-gray-400"
+              className="font-mono text-[30px] text-gray-400 text-center"
             >
-              Fair Deal
+              Fair Deal With Escrow Account
             </motion.h1>
           </div>
           <img src="https://superteam.fun/_app/immutable/assets/alphasquad_new.ec14b272.png" />

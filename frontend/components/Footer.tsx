@@ -8,7 +8,7 @@ const Footer = () => {
     >
       <div className="flex flex-col items-center justify-center mt-10">
         <SearchCodeIcon height={150} width={150} className="text-gray-800" />
-        <h1 className="font-mono text-[35px] md:text-[50px] px-20 section-heading">
+        <h1 className="font-mono text-[35px] md:text-[50px] mx-20 section-heading">
           Finder
         </h1>
       </div>

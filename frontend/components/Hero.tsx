@@ -22,20 +22,20 @@ export const Hero = () => {
   }
   useEffect(() => {
     createStars(1, 100);
-    createStars(2, 35);
-    createStars(3, 20);
+    createStars(2, 50);
+    createStars(3, 40);
   }, []);
   return (
-    <div className="relative mx-0 h-[100dvh] w-full" ref={dd}>
+    <div className="relative mx-0 h-[100dvh] w-full z-0 " ref={dd}>
       <Navbar />
       <img
         src="https://superteam.fun/_app/immutable/assets/hero_home.03808f14.webp"
         sizes="(max-width: 640px) 100vw, (max-width: 1440px) 100vw, 2560px"
         loading="eager"
         alt=""
-        className="object-cover w-full h-full z-90"
+        className="object-cover w-full h-full z-10"
       ></img>
-      <div className="absolute font-md flex flex-col justify-start items-center w-full top-[20%] md:top-[25%] z-10 gap-5">
+      <div className="absolute font-md flex flex-col justify-start items-center w-full top-[20%] md:top-[25%] z-7 gap-5">
         <motion.h1 className=" font-mono text-[25px] md:text-[40px] text-center leading-30">
           <motion.span
             initial={{ opacity: 0, y: -50 }}
@@ -44,7 +44,7 @@ export const Hero = () => {
             viewport={{ once: true }}
             className="block overflow-hidden"
           >
-            Find Yourself
+            Find yourself
           </motion.span>
           <motion.span
             initial={{ opacity: 0, y: 50 }}
@@ -53,14 +53,14 @@ export const Hero = () => {
             viewport={{ once: true }}
             className="overflow-hidden"
           >
-            ⚡️ome Work
+            ⚡️ome work.
           </motion.span>
         </motion.h1>
         <p className="font-md md:text-[20px] text-[16px] text-center">
           <span className="block">
-            Introducing a new freelancing platform Finder but
+            Hey, I am fresher into full stack development
           </span>
-          <span>exclusively utilizes Solana (SOL) for payments.</span>
+          <span>and looking for good opportunity.</span>
         </p>
         <div className="flex items-center justify-center">
           <a

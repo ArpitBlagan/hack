@@ -8,25 +8,32 @@ const Footer = () => {
     >
       <div className="flex flex-col items-center justify-center mt-10">
         <SearchCodeIcon height={150} width={150} className="text-gray-800" />
-        <h1 className="font-mono text-[35px] md:text-[50px] mx-20 section-heading">
-          Finder
-        </h1>
+        <h1 className="font-mono text-[35px] md:text-[50px] mx-20 section-heading"></h1>
       </div>
       <div className="flex-1 flex md:flex-row items-center justify-center md:justify-end gap-10 md:mr-10">
         <div className="flex flex-col items-center justify-center font-semibold text-md">
-          <a href="https://github.com/ArpitBlagan" target="_blank">
+          <a
+            href="https://github.com/ArpitBlagan"
+            target="_blank"
+            className="hover:text-red-500"
+          >
             Github
           </a>
           <a
             href="https://www.linkedin.com/in/arpit-blagan-79081b193"
+            className="hover:text-red-500"
             target="_blank"
           >
             LindedIn
           </a>
-          <a href="https://x.com/arpit_blagan" target="_blank">
+          <a
+            href="https://x.com/arpit_blagan"
+            target="_blank"
+            className="hover:text-red-500"
+          >
             Twitter
           </a>
-          <h1>By Arpit Blagan.</h1>
+          <h1 className="text-gray-700">arpitblagan27@gmail.com</h1>
         </div>
       </div>
     </div>

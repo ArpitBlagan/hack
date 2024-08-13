@@ -23,7 +23,7 @@ export const Hero = () => {
   useEffect(() => {
     createStars(1, 100);
     createStars(2, 50);
-    createStars(3, 40);
+    createStars(3, 30);
   }, []);
   return (
     <div className="relative mx-0 h-[100dvh] w-full z-0 " ref={dd}>
@@ -44,7 +44,7 @@ export const Hero = () => {
             viewport={{ once: true }}
             className="block overflow-hidden"
           >
-            Find yourself
+            Adaptable Software Developer
           </motion.span>
           <motion.span
             initial={{ opacity: 0, y: 50 }}
@@ -53,14 +53,14 @@ export const Hero = () => {
             viewport={{ once: true }}
             className="overflow-hidden"
           >
-            ⚡️ome work.
+            DevOps & Web3 Enthusiast
           </motion.span>
         </motion.h1>
-        <p className="font-md md:text-[20px] text-[16px] text-center">
+        <p className="font-md md:text-[20px] text-[16px] text-gray-400 text-center">
           <span className="block">
-            Hey, I am fresher into full stack development
+            Hey,I am Arpit Blagan an Software Developer with
           </span>
-          <span>and looking for good opportunity.</span>
+          <span>a passion for DevOps and Web3 (Solana).</span>
         </p>
         <div className="flex items-center justify-center">
           <a

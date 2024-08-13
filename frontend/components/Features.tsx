@@ -1,83 +1,101 @@
 "use client";
 import { motion } from "framer-motion";
 import InfoDialog from "./InfoDialog";
+import ping from "../images/Screenshot 2024-08-13 at 10.21.50 AM.png";
+import anPing from "../images/Screenshot 2024-08-13 at 10.22.22 AM.png";
+import blog from "../images/Screenshot 2024-08-13 at 10.23.01 AM.png";
+import anBlog from "../images/Screenshot 2024-08-13 at 10.23.34 AM.png";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
 const Features = () => {
   return (
     <div className="mb-10">
       <h1 className="font-mono md:text-[50px] text-[30px] text-center font-semibold ">
-        What we Offers
+        Projects
       </h1>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2 md:mx-10">
-        <div className="flex flex-col items-center justify-center gap-5 relative ">
-          <div className="absolute top-[20%] w-full flex items-center justify-center">
+      <div className="flex flex-col gap-2 md:mx-10">
+        <div className="flex flex-col justify-center items-center gap-5 relative mt-10">
+          <div className="absolute top-[5%] w-full flex flex-col justify-center">
             <motion.h1
               initial={{ opacity: 0, y: -50 }}
               whileInView={{ opacity: 1, y: 0, animation: "ease-in-out" }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="font-mono text-[30px] text-gray-400 text-center"
+              className="font-mono text-[30px] text-center"
             >
-              Fair Deal With Escrow Account
+              PingMe
             </motion.h1>
           </div>
-          <img src="https://superteam.fun/_app/immutable/assets/alphasquad_new.ec14b272.png" />
-          <InfoDialog
-            title="Fair Deal"
-            p1="1. Transparent Pricing and Fees
-            Clearly communicate the pricing structure for connects, service fees, and bonuses.
-            Ensure that service fees are applied consistently across the board to prevent abuse.
-            Consider exempting small fixed-price projects from service fees to encourage fair pricing."
-            p2="2. Minimum Rates and Pricing Guidelines
-            Establish and enforce minimum hourly rates (e.g., $3/hour) and fixed-price project minimums 
-            (e.g., $5) to ensure fair compensation."
-          />
+          <div
+            className="flex items-center mt-20 h-[50dvh] relative w-full rounded-t-xl border overflow-hidden md:overflow-visible"
+            style={{ backgroundColor: "#111222" }}
+          >
+            <Image
+              src={ping}
+              className="absolute left-10 lg:left-40 top-5"
+              alt="home"
+              width={600}
+              height={600}
+            />
+            <Image
+              src={anPing}
+              alt="another"
+              className="absolute bottom-5 right-10 lg:right-40 z-10"
+              width={600}
+              height={600}
+            />
+          </div>
+          <a
+            className=" glow-on-hover flex items-center justify-center"
+            href="https://chat-assignment-lyart.vercel.app/"
+            target="_blank"
+            style={{ backgroundColor: "#121212" }}
+          >
+            See
+          </a>
         </div>
-        <div className="flex items-center justify-center flex-col gap-5 relative">
-          <div className="absolute top-[20%] w-full flex  items-center justify-center">
-            <motion.h1
-              initial={{ opacity: 0, y: -50 }}
-              whileInView={{ opacity: 1, y: 0, animation: "ease-in-out" }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="font-mono text-[30px] text-center text-gray-400"
-            >
-              <span className="block">Realtime</span> Communication
-            </motion.h1>
-          </div>
-          <img src="https://superteam.fun/_app/immutable/assets/ecosystem_calls_new.385a6a4c.png" />
-          <InfoDialog
-            title="Realtime Communication"
-            p1="1. Bidirectional Communication
-            WebSockets allow for full-duplex communication channels over a single TCP connection, enabling real-time data exchange between clients and servers. This means both the client and server can send messages independently, enhancing interactivity."
-            p2="2. Instant Message Delivery
-            Messages are delivered instantly without the need for constant polling. This reduces latency and ensures that users receive messages in real-time, which is crucial for chat applications."
-          />
+        <div className="my-5">
+          <hr />
         </div>
-        <div className="flex items-center justify-center flex-col gap-5 relative cursor-pointer">
-          <div className="absolute top-[20%] w-full flex items-center justify-center">
+        <div className="flex flex-col justify-center items-center gap-5 relative overflow-hidden md:overflow-visible">
+          <div className="absolute top-[5%] w-full flex flex-col justify-center">
             <motion.h1
               initial={{ opacity: 0, y: -50 }}
               whileInView={{ opacity: 1, y: 0, animation: "ease-in-out" }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="font-mono text-[30px] text-gray-400"
+              className="font-mono text-[30px] text-center"
             >
-              Solana Wallets
+              Belog
             </motion.h1>
           </div>
-          <img
-            src="https://superteam.fun/_app/immutable/assets/Instagrants_new.79df773e.png"
-            className=""
-          />
-          <InfoDialog
-            title="Solana Wallets"
-            p1="1. Integration with Solana Wallet Adapter
-            Utilize the Solana Wallet Adapter library, which provides a standardized way to connect multiple Solana wallets, including popular options like Phantom and Solflare.
-            This library supports a variety of wallets and simplifies the connection process for users."
-            p2="2. User-Friendly Connection Process
-            Implement a Wallet Connection Button that prompts users to select their preferred wallet from a list. This can be done using components like WalletMultiButton from the wallet adapter UI library.
-            Ensure the connection process is intuitive, guiding users through the steps to authorize the app to access their wallet."
-          />
+          <div
+            className="flex items-center mt-20 h-[50dvh] relative w-full rounded-b-xl border"
+            style={{ backgroundColor: "#111222" }}
+          >
+            <Image
+              src={blog}
+              className="absolute left-10 md:left-40 top-5"
+              alt="home"
+              width={600}
+              height={600}
+            />
+            <Image
+              src={anBlog}
+              alt="another"
+              className="absolute bottom-5 right-10 md:right-40 z-10"
+              width={600}
+              height={600}
+            />
+          </div>
+          <a
+            className=" glow-on-hover flex items-center justify-center"
+            href="https://next-fullstack-belog-phi.vercel.app/"
+            target="_blank"
+            style={{ backgroundColor: "#121212" }}
+          >
+            See
+          </a>
         </div>
       </div>
     </div>
